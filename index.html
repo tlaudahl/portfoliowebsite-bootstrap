@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/be15e22c7a.js"></script>
     <title>Travis Laudahl</title>
   </head>
@@ -25,10 +26,10 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -46,7 +47,7 @@
     </nav>
 
     <!-- CALL TO ACTION -->
-    <div
+    <header
       class="jumbotron jumbotron-fluid text-center d-flex align-items-center min-vh-100"
     >
       <div class="container">
@@ -57,21 +58,24 @@
             data-toggle="tooltip"
             data-placement="top"
             title="contact@travislaudahl.com"
+            aria-haspopup="true"
           ></i>
           <i
             class="fab fa-github fa-3x mr-5"
             data-toggle="tooltip"
             data-placement="top"
             title="tlaudahl"
+            aria-haspopup="true"
           ></i>
           <i
             class="fab fa-linkedin-in fa-3x"
             data-toggle="tooltip"
             data-placement="top"
             title="travis-laudahl"
+            aria-haspopup="true"
           ></i>
         </div>
-        <p class="lead text-break">
+        <p class="lead text-responsive">
           Full Stack Web Developer primarily building with JavaScript, React,
           Node.js, and Redux. I have a background in management in the
           automotive field and currently work as an aircraft deicer on the
@@ -96,7 +100,223 @@
           products and tools people love.
         </p>
       </div>
-    </div>
+    </header>
+
+    <!-- PROJECTS -->
+    <section
+      class="mb-5 text-center d-flex flex-wrap justify-content-sm-around align-items-sm-center flex-sm-column flex-lg-row"
+      id="projects"
+    >
+      <div class="card mb-md-4" style="width: 35rem;">
+        <img
+          src="./images/spacecowboy.gif"
+          class="card-img-top img-responsive"
+          alt="Space Cowboy Project"
+        />
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h3>Space Cowboys</h3>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Space Cowboy was created by four developers using React on the
+                frontend and Flask on the backend.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Responsible for displaying the "space cowboy" over canvas, then
+                being able to control it with arrow keys and WASD, and using
+                Canvas API to display a tilemap generated from the backend.
+              </p>
+            </li>
+            <li class="list-group-item px-0">
+              <div
+                class="container d-flex justify-content-between justify-content-md-evenly w-100 align-items-center p-0"
+              >
+                <div class="d-flex flex-column">
+                  <i class="fab fa-js-square fa-2x"></i
+                  ><small class="text-muted">JavaScript</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-react fa-2x"></i
+                  ><small class="text-muted">React</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-python fa-2x"></i
+                  ><small class="text-muted">Python</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fas fa-flask fa-2x"></i
+                  ><small class="text-muted">Flask</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-html5 fa-2x"></i
+                  ><small class="text-muted">HTML5</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-css3-alt fa-2x"></i
+                  ><small class="text-muted">CSS3</small>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://github.com/python-django-unchained/space-cowboy--FE"
+                class="btn btn-secondary mx-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+              <a
+                href="https://space-cowboys.netlify.app/"
+                class="btn btn-secondary mx-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-md-4" style="width: 35rem;">
+        <img
+          src="./images/rickandmorty.gif"
+          class="card-img-top"
+          alt="Rick and Morty Project"
+        />
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h3>Rick and Morty</h3></li>
+            <li class="list-group-item">
+              <p class="lead">
+                This project was used with Axios making get requests to an
+                external API, React and React Router using dynamic routes for
+                each location, episode, and character.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Setup the dynamic routing, the redux store, and deployment on
+                Netlify. Styling from the Rick and Morty API Website.
+              </p>
+            </li>
+            <li class="list-group-item px-0">
+              <div
+                class="container d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex flex-column">
+                  <i class="fab fa-js-square fa-2x"></i
+                  ><small class="text-muted">JavaScript</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-react fa-2x"></i
+                  ><small class="text-muted">React</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-react fa-2x"></i
+                  ><small class="text-muted">React Redux</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-html5 fa-2x"></i
+                  ><small class="text-muted">HTML5</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-css3-alt fa-2x"></i
+                  ><small class="text-muted">CSS3</small>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/tlaudahl/React-Redux-App"
+                class="btn btn-secondary mx-3"
+                >Code</a
+              >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sparandmapi.netlify.app/"
+                class="btn btn-secondary mx-3"
+                >Live</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-md-4" style="width: 35rem;">
+        <img
+          src="./images/usemytools.gif"
+          class="card-img-top"
+          alt="Use My Tools Project"
+        />
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h3>Use My Tools</h3></li>
+            <li class="list-group-item">
+              <p class="lead">
+                Use My Tools was created by four developers using React on the
+                frontend and Node.js with Express.js on the backend.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Responsible for setting up the entire backend with Node.js,
+                Express.js, JWT, Bcryptjs, SQLite, and Knex. Deployed to Heroku
+                and using Heroku Postgres.
+              </p>
+            </li>
+            <li class="list-group-item px-0">
+              <div
+                class="container d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex flex-column">
+                  <i class="fab fa-js-square fa-2x"></i
+                  ><small class="text-muted">JavaScript</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-node fa-2x"></i
+                  ><small class="text-muted">Node.js</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-react fa-2x"></i
+                  ><small class="text-muted">React</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <i class="fab fa-css3-alt fa-2x"></i
+                  ><small class="text-muted">CSS3</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-muted">Express.js</small>
+                </div>
+                <div class="d-flex flex-column">
+                  <small class="text-muted">JWT</small>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://github.com/buildweek-use-my-tools/back-end"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="btn btn-secondary mx-3"
+                >Code</a
+              >
+              <a
+                href="https://use-my-tools.now.sh/"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="btn btn-secondary mx-3"
+                >Live</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
