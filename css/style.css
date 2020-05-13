@@ -1,0 +1,9 @@
+.text-responsive {
+  font-size: calc(10% + 1vw + 1vh);
+}
+
+@media only-screen and (max-width: 400px) {
+  .text-responsive {
+    font-size: calc(50% + 1vw + 1vh) !important;
+  }
+}
